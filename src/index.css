@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap');
+
+@theme {
+  /* Nature Palette */
+  --color-nature-50: #f0f9f3;
+  --color-nature-100: #dcf0e2;
+  --color-nature-200: #95d5b2;
+  --color-nature-300: #74c69d;
+  --color-nature-400: #52b788;
+  --color-nature-500: #40916c;
+  --color-nature-600: #2d6a4f;
+  --color-nature-700: #1b4332;
+  --color-nature-800: #081c15;
+  --color-nature-900: #000000;
+
+  /* Sand Palette */
+  --color-sand-50: #fefae0;
+  --color-sand-100: #fcf4c0;
+  --color-sand-200: #f9e8a1;
+  --color-sand-300: #f6dc82;
+  --color-sand-400: #f3d062;
+  --color-sand-500: #e9c46a;
+
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  
+  /* Background */
+  --color-ivory: #FBFAF8;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 98.4%; /* #FBFAF8 */
+    --foreground: 20 14.3% 4.1%;
+    --primary: 153 43% 19%; /* #1b4332 */
+    --secondary: 147 41% 71%; /* #95d5b2 */
+    --accent: 43 74% 66%; /* #e9c46a */
+  }
+
+  body {
+    @apply font-sans antialiased text-stone-800 bg-ivory;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/70 backdrop-blur-xl border-b border-white/20 shadow-[0_8px_32px_0_rgba(31,38,135,0.07)];
+  }
+  
+  .glass-dark {
+    @apply bg-black/40 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)];
+  }
+
+  .nav-link {
+    @apply text-sm font-medium transition-all hover:text-nature-700 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-nature-700 after:transition-all hover:after:w-full;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
