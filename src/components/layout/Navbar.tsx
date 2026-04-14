@@ -47,15 +47,15 @@ const Navbar = () => {
         }}
         className="fixed top-0 left-0 right-0 z-[70] px-6 py-4"
       >
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
+        <div className="max-w-8xl mx-auto flex items-center justify-between">
 
           {/* Logo — always visible */}
           <a href="/" className="flex items-center gap-4 group" onClick={closeMenu}>
-            <div className="p-1 rounded-lg transition-all group-hover:rotate-12 bg-white/10 backdrop-blur-sm">
+            <div className="p-1 rounded-lg transition-all group-hover:rotate-12 bg-white/18 backdrop-blur-sm">
               <img
                 src="/images/logo.png"
                 alt="Sentiero Logo"
-                className="w-15 h-15 object-contain brightness-0 invert"
+                className="w-16 h-16 object-contain brightness-0 invert"
               />
             </div>
           </a>

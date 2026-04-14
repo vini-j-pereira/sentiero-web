@@ -61,7 +61,7 @@ const Hero = () => {
         >
           <motion.div
             style={{ y: contentY, opacity: contentOpacity }}
-            className="max-w-7xl mx-auto px-6 flex flex-col items-center justify-center text-center pb-24 md:pb-32 pt-20"
+            className="max-w-7xl mx-auto px-6 flex flex-col items-center justify-center text-center pb-32 md:pb-48 lg:pb-64 pt-20"
           >
             <div className="max-w-4xl text-white">
               <motion.img
@@ -77,7 +77,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="flex flex-wrap items-center justify-center -mt-8 md:-mt-12 lg:-mt-16"
+                className="flex flex-wrap items-center justify-center -mt-8 md:-mt-24 lg:-mt-48 xl:-mt-64"
               >
                 <div className="flex items-center gap-3 bg-white/10 backdrop-blur-md px-8 py-4 rounded-full border border-white/20">
                   <MapPin size={18} className="text-nature-200" />
